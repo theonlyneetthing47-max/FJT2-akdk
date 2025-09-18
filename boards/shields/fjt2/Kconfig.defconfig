@@ -1,0 +1,14 @@
+
+if SHIELD_FJT2_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "fjt2"
+
+endif
+
+if SHIELD_FJT2_LEFT || SHIELD_FJT2_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

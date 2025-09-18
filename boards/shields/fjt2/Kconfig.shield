@@ -1,0 +1,4 @@
+config SHIELD_FJT2_LEFT
+    def_bool $(shields_list_contains,fjt2_left)
+config SHIELD_FJT2_RIGHT
+    def_bool $(shields_list_contains,fjt2_right)

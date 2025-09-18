@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: fjt2
+name: fjt2
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - fjt2_left
+  - fjt2_right
