@@ -9,21 +9,21 @@
 
         layer_0 {
             bindings = <
-&kp ESC                  &kp N1  &kp N2        &kp N3  &kp N4  &kp N5                          &kp N6     &kp N7   &kp N8     &kp N9   &kp N0         &kp BACKSPACE
-&kp LANG_ZENKAKUHANKAKU  &kp Q   &kp W         &kp E   &kp R   &kp T                           &kp Y      &kp U    &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&kp TAB                  &kp A   &kp S         &kp D   &kp F   &kp G                           &kp H      &kp J    &kp K      &kp L    &kp SLASH      &kp RIGHT_BRACKET
-&kp LSHFT                &kp Z   &kp X         &kp C   &kp V   &kp B                           &kp N      &kp M    &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LCTRL                &none   &kp LEFT_GUI          &tog 1  &kp LALT  &kp SPACE  &kp ENTER  &kp PSCRN  &kp DEL                      &kp MINUS      &kp EQUAL
+&kp ESC         &kp N1        &kp N2    &kp N3  &kp N4  &kp N5                             &kp N6      &kp N7   &kp N8     &kp N9   &kp N0         &kp BACKSPACE
+&kt LANGUAGE_1  &kp Q         &kp W     &kp E   &kp R   &kp T                              &kp Y       &kp U    &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp TAB         &kp A         &kp S     &kp D   &kp F   &kp G                              &kp H       &kp J    &kp K      &kp L    &kp SLASH      &kp RIGHT_BRACKET
+&kp LSHFT       &kp Z         &kp X     &kp C   &kp V   &kp B                              &kp N       &kp M    &kp COMMA  &kp DOT  &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LCTRL       &kp LEFT_WIN  &kp LALT          &to 1   &kp SPACE  &none  &kp PRINTSCREEN  &kp RETURN  &kp DEL                      &kp MINUS      &kp EQUAL
             >;
         };
 
         layer_1 {
             bindings = <
-&none         &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                &kp F6     &kp F7     &kp F8  &kp F9  &kp F10  &kp F11
-&bt BT_SEL 0  &none   &none   &none   &none   &none                 &none      &none      &none   &none   &none    &kp F12
-&bt BT_SEL 1  &none   &none   &none   &none   &none                 &none      &none      &none   &none   &none    &none
-&bt BT_SEL 2  &none   &none   &none   &none   &none                 &mkp LCLK  &mkp RCLK  &none   &none   &none    &none
-&none         &none   &none           &tog 0  &none   &none  &none  &none      &none                      &none    &none
+&none           &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                &kp F6  &kp F7     &kp F8          &kp F9     &kp F10  &kp F11
+&kp LANGUAGE_2  &none   &none   &none   &none   &none                 &none   &none      &none           &none      &none    &kp F12
+&bt BT_SEL 0    &none   &none   &none   &none   &none                 &none   &mkp LCLK  &msc MOVE_X(5)  &mkp RCLK  &none    &none
+&bt BT_SEL 1    &none   &none   &none   &none   &none                 &none   &none      &msc MOVE_Y(5)  &none      &none    &none
+&none           &none   &none           &to 0   &none   &none  &none  &none   &none                                 &none    &none
             >;
         };
     };
