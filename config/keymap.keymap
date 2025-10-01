@@ -19,21 +19,21 @@
 
         layer_1 {
             bindings = <
-&none           &kp F1     &kp F2  &kp F3     &kp F4  &kp F5                &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&kp LANGUAGE_2  &none      &none   &none      &none   &none                 &none   &none   &none   &none   &none    &kp F12
-&bt BT_SEL 0    &mkp LCLK  &none   &mkp RCLK  &none   &none                 &none   &none   &none   &none   &none    &none
-&bt BT_SEL 1    &none      &none   &none      &none   &none                 &none   &none   &none   &none   &none    &none
-&none           &none      &none              &to 0   &to 2   &none  &none  &none   &none                   &none    &none
+&none           &kp F1     &kp F2  &kp F3     &kp F4  &kp F5                &kp F6  &kp F7  &kp F8  &kp F9     &kp F10  &kp F11
+&kp LANGUAGE_2  &none      &none   &none      &none   &none                 &none   &none   &none   &none      &none    &kp F12
+&bt BT_SEL 0    &mkp LCLK  &none   &mkp RCLK  &none   &none                 &none   &none   &none   &mkp LCLK  &none    &mkp RCLK
+&bt BT_SEL 1    &mkp MB4   &none   &none      &none   &none                 &none   &none   &none   &mkp MB4   &none    &none
+&none           &none      &none              &to 0   &to 2   &none  &none  &none   &to 2                      &none    &none
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans  &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans  &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans  &trans     &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans             &to 0   &to 1   &trans  &trans  &trans  &trans                  &trans  &trans
+&trans  &trans     &trans  &trans     &trans  &trans                  &trans  &trans  &trans  &trans     &trans  &trans
+&trans  &trans     &trans  &trans     &trans  &trans                  &trans  &trans  &trans  &trans     &trans  &trans
+&trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans                  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK
+&trans  &mkp MB4   &trans  &trans     &trans  &trans                  &trans  &trans  &trans  &mkp MB4   &trans  &trans
+&trans  &trans     &trans             &to 0   &to 1   &trans  &trans  &trans  &to 1                      &trans  &trans
             >;
         };
     };
